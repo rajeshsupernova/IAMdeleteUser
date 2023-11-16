@@ -60,7 +60,7 @@ $usernameToMatch = $thirdPartyUser['username'];
 
     // If a matching IAM user is found, delete it
     if ($matchingIamUser) {
-        $iamClient->deleteUser(['UserName' => $matchingIamUser['UserName']]);
+       // $iamClient->deleteUser(['UserName' => $matchingIamUser['UserName']]); // uncomment this line after proper testing.
         echo "IAM user '{$matchingIamUser['UserName']}' deleted.\n";
     }
 }
